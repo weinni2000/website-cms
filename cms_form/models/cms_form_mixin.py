@@ -4,9 +4,8 @@
 import json
 from collections import OrderedDict
 
-from odoo import _, api, exceptions, fields, models, tools
+from odoo import _, api, exceptions, fields, models
 from odoo.tools.cache import cache
-
 
 from .. import marshallers, utils
 from .fields import Serialized

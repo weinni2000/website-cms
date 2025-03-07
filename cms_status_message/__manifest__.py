@@ -17,8 +17,8 @@
     "assets": {
         "web.assets_frontend": [
             "cms_status_message/static/src/js/test.js",
-            #"cms_status_message/static/src/js/tool.esm.js",
-            #"cms_status_message/static/src/js/autodismiss.esm.js",
+            # "cms_status_message/static/src/js/tool.esm.js",
+            # "cms_status_message/static/src/js/autodismiss.esm.js",
         ],
     },
     "installable": True,

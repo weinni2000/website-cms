@@ -194,7 +194,7 @@ class TestControllersRender(FormHttpTestCase):
 
     def test_default_edit_rendering(self):
         partner = self.env.ref("base.res_partner_1")
-        dom = self.html_get("/cms/edit/res.partner/{}".format(partner.id))
+        dom = self.html_get(f"/cms/edit/res.partner/{partner.id}")
         self._check_rendering(dom, "cms.form.res.partner", "res.partner", "edit")
 
     def _check_wiz_rendering(self, dom, form_model, model, mode, extra_klass=""):

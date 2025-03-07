@@ -5,12 +5,16 @@
                 <form class="form" method="GET">
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
-                        <input type="text" id="message" name="message[msg]" class="form-control" />
+                        <input
+                            type="text"
+                            id="message"
+                            name="message[msg]"
+                            class="form-control"
+                        />
                     </div>
                     <div class="mb-3">
                         <div class="form-text">
-                            Enter a message and submit the form.<br
-                            />
+                            Enter a message and submit the form.<br />
 You'll see your message rendered as a status message.
                         </div>
                     </div>

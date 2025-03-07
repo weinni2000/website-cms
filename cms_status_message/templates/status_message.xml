@@ -8,9 +8,19 @@
     <template id="message_listing_wrapper" name="CMS status_message listing wrapper">
         <div class="container status_message">
             <t t-foreach="status_message" t-as="msg">
-                <div t-attf-class="alert alert-#{msg['type']} #{msg['dismissible'] and 'alert-dismissible' or ''}" t-att-data-autodismiss="msg.get('dismiss_options', {}).get('autodismiss')" t-att-data-autodismiss-timeout="msg.get('dismiss_options', {}).get('autodismissTimeout')" role="alert">
+                <div
+                    t-attf-class="alert alert-#{msg['type']} #{msg['dismissible'] and 'alert-dismissible' or ''}"
+                    t-att-data-autodismiss="msg.get('dismiss_options', {}).get('autodismiss')"
+                    t-att-data-autodismiss-timeout="msg.get('dismiss_options', {}).get('autodismissTimeout')"
+                    role="alert"
+                >
                     <t t-if="msg['dismissible']">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close" />
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="alert"
+                            aria-label="close"
+                        />
                     </t>
                     <t t-call="cms_status_message.message_wrapper" />
                 </div>
@@ -33,7 +43,11 @@
     <!--
         TODO: move to a glue module -> no need to depend on portal for this
     -->
-    <template id="portal_add_status_message" inherit_id="portal.portal_layout" name="Add status message">
+    <template
+        id="portal_add_status_message"
+        inherit_id="portal.portal_layout"
+        name="Add status message"
+    >
         <xpath expr="(//div[@id='wrap']/div)[1]" position="before">
             <t t-call="cms_status_message.status_message" />
         </xpath>

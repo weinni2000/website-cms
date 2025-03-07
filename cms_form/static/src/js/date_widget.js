@@ -1,7 +1,6 @@
 import animation from "@website/js/content/snippets.animation";
-import { debounce } from "@web/core/utils/timing";
-import { time } from "@odoo/web/core/utils/time";
-
+import {debounce} from "@web/core/utils/timing";
+import {time} from "@odoo/web/core/utils/time";
 
 animation.registry.CMSDateWidget = animation.Class.extend({
     selector: ".cms_form_wrapper form input.js_datepicker",
@@ -91,5 +90,4 @@ animation.registry.CMSDateWidget = animation.Class.extend({
         this.picker.destroy();
         this._super.apply(this, arguments);
     },
-
 });

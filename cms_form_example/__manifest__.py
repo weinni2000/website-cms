@@ -15,9 +15,9 @@
         "cms_form",
     ],
     "data": [
-        #"templates/assets.xml",
+        # "templates/assets.xml",
     ],
-    #"installable": False,
+    # "installable": False,
     "assets": {
         "web.assets_frontend": [
             "cms_form_example/static/src/js/cms_form_example.tour.js",

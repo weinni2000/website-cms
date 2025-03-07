@@ -29,12 +29,12 @@
             "cms_form/static/src/scss/cms_form.scss",
             "cms_form/static/src/scss/progressbar.scss",
             # TODO: review them all w/ modern JS
-            #"cms_form/static/src/js/select2widgets.js",
-            #"cms_form/static/src/js/date_widget.js",
-            #"cms_form/static/src/js/textarea_widget.js",
-            #"cms_form/static/src/js/master_slave.js",
-            #"cms_form/static/src/js/lock_copy_paste.js",
-            #"cms_form/static/src/js/ajax.js",
+            # "cms_form/static/src/js/select2widgets.js",
+            # "cms_form/static/src/js/date_widget.js",
+            # "cms_form/static/src/js/textarea_widget.js",
+            # "cms_form/static/src/js/master_slave.js",
+            # "cms_form/static/src/js/lock_copy_paste.js",
+            # "cms_form/static/src/js/ajax.js",
         ],
     },
 }
